@@ -77,7 +77,6 @@ public class MainActivity extends AppCompatActivity {
         button_confirm.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "CONFIRMED", Toast.LENGTH_SHORT).show();
                 dataList.add(city_input.getText().toString());
                 city_input.getText().clear();
                 cityAdapter.notifyDataSetChanged();
